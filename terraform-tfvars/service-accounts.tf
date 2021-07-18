@@ -1,13 +1,5 @@
-resource "google_service_account" "sa1" {
-  account_id   = "terraform-deployed-sa1"
-  display_name = "Service account deployed by terraform"
-}
-
-resource "google_project_iam_binding" "project" {
-  project = "revanth-gcp-2020"
-  role    = "roles/viewer"
-
-  members = [
-    "serviceAccount:${google_service_account.sa1.email}"
-  ]
+resource "google_service_account" "service_accounts" {
+  for_each = { for index,service_account in local.json_data.service_accounts : index => service_account }
+  account_id   = each.value.account_id
+  display_name = each.value.display_name
 }
