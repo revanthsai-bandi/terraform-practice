@@ -1,15 +1,13 @@
 locals {
-  json_data = jsondecode(file("service_accounts.auto.tfvars.json"))
+  json_data_project_roles = jsondecode(file("project_roles.auto.tfvars.json"))
 }
 
 resource "google_project_iam_binding" "project" {
-  for_each = { for index,service_account in local.json_data.service_accounts : index => service_account }
+  for_each = { for index,role in local.json_data_project_roles : index => role }
   project = var.project
-  role    = each.value.role
+  role    = "roles/${each.key}"
 
-  members = [
-    "serviceAccount:${each.value.account_id}@${var.project}.iam.gserviceaccount.com"
-  ]
+  members = each.value
 }
 
 variable "project" {
