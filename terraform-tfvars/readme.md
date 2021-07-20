@@ -1,7 +1,4 @@
-
 #  Using .tfvars.json and .auto.tfvars.json files for variable input/declaration 
-
-## 
 
 The files named as ".tfvars" are used to input the variables for the configuration. 
 These files are usually named in following ways :
