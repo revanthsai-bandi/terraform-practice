@@ -1,0 +1,1 @@
+{"ID":"eae9641d-da74-f715-a92c-3f7660af3c00","Operation":"OperationTypeApply","Info":"","Who":"LAPTOP-B4K3E1R3\\revan@LAPTOP-B4K3E1R3","Version":"1.0.2","Created":"2021-07-21T14:32:15.0775253Z","Path":"gs://terraform_remote_backend001/terraform/tf-resource-lifecycle/ignore_changes/default.tflock"}
