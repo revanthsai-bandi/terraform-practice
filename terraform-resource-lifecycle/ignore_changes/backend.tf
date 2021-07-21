@@ -2,6 +2,6 @@
 terraform {
   backend "gcs" {
     bucket = "terraform_remote_backend001"
-    prefix = "terraform/tf-resource-lifecycle"
+    prefix = "terraform/tf-resource-lifecycle/ignore_changes/"
   }
 }
