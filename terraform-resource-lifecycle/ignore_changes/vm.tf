@@ -23,5 +23,8 @@ resource "google_compute_instance" "vm_instance" {
   	}
 	tags = ["allow-nginx-ingress"]
 	labels = { "hi" : "hello" }
+	lifecycle {
+	  ignore_changes = all
+	}
 }
 
