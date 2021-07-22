@@ -4,7 +4,7 @@
 
 * ignore_changes also takes care of changes that need restarting the recreating the resources.
 * In this example : 
-                (update)    changes that are updated on-the-fly : labels, tags, ssh_keys
-                (update)    changes that need restarting : metadata, machine_type, service_account
-                (replace)    changes that need re-creation : vm name, OS
+                ** (update)    changes that are updated on-the-fly : labels, tags, ssh_keys
+                ** (update)    changes that need restarting : metadata, machine_type, service_account
+                ** (replace)    changes that need re-creation : vm name, OS
 
