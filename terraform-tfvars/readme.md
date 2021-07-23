@@ -12,4 +12,4 @@ The files used in this folder are .auto.tfvars.json which are in JSON format and
 
 # Points to remember : 
 
-* While using tfvars file remember to declare the varibale blocks wherever necessary in the .tf files
+* While using .tfvars/.auto.tfvars file remember to declare the variable blocks wherever necessary in the .tf files
