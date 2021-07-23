@@ -9,3 +9,7 @@ The files named as ".auto.tfvars" are loaded autoamtically by terraform while ru
 These files are automatically loaded and made ready for calling in configuration files.
 
 The files used in this folder are .auto.tfvars.json which are in JSON format and are loaded into config files using "jsondecode" command to be read as map and then iterated logically.
+
+# Points to remember : 
+
+* While using tfvars file remember to declare the varibale blocks wherever necessary in the .tf files
