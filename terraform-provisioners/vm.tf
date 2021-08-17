@@ -45,7 +45,7 @@ resource "google_compute_instance" "vm_instance" {
     provisioner "remote-exec" {
         inline = [
             "chmod +x /tmp/${var.filename}",
-            "/tmp/${var.filename} revanth sai"
+            "/tmp/${var.filename} revanth sai > /tmp/remote-exec.log"
         ]
     }
 }
