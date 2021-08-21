@@ -35,6 +35,8 @@ resource "google_bigquery_dataset" "dataset" {
         }
     }
 
+    # Adding these legacy roles to remove unnecessary noise in "Terraform plan and apply" commands
+    
     access {
       role = "OWNER"
       special_group = "projectOwners"
