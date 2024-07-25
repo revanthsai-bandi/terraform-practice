@@ -1,4 +1,4 @@
 provider "google" {
-  project = "revanth-gcp-2020"
+  project = "lloyds-hack-grp-24"
   region  = "us-central1"
 }
